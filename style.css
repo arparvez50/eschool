@@ -430,7 +430,7 @@ nav a:hover {
         /* display: block; */
         background-color: rgba(17, 145, 17, 0.459);
         width: 100vw;
-        height: 50vh;
+        height: 100vh;
         transition: 0.3s ease-in-out;
     }
 
