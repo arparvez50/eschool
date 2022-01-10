@@ -1,0 +1,471 @@
+/* Universal value */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fdfdfd;
+}
+
+/* Color Variable */
+:root {
+    --light-green: #f0fff0;
+    --green-color: #21b573;
+    --purple-black: #413960;
+    --black-color: #000000;
+    --light-black: #6c6b6b;
+}
+
+/* Website wrapper */
+.wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.green-bg {
+    background-color: var(--light-green);
+}
+
+/* Global button */
+.btn {
+    text-decoration: none;
+    background-color: var(--green-color);
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .2s ease;
+    box-shadow: 0px 4px 8px 0px rgba(0, 255, 0, 0.3);
+}
+
+.btn:hover {
+    color: var(--green-color);
+    background-color: white;
+}
+
+/* Navigation bar */
+header {
+    background-color: var(--light-green);
+    display: flex;
+    /* position: sticky; */
+    position: sticky;
+    z-index: 9999;
+    top: 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Mobile menu Button will hidden until mobile version */
+#mobile-menu {
+    display: none;
+}
+
+/* Mobile menu cross Button will hidden until mobile version */
+
+#cross-btn {
+    display: none;
+}
+
+/* Mobile Menu Body will hidden until Mobile menu button CLICKED */
+.mobile-menu-body {
+    display: none;
+}
+
+.logo {
+    max-width: 200px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--black-color);
+    margin-left: 20px;
+    transition: .3s ease-in-out;
+}
+
+nav a:hover {
+    color: var(--green-color)
+}
+
+/* Hero section */
+.slider {
+    background-color: var(--light-green);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 0px;
+}
+
+.header-image {
+    max-width: 500px;
+}
+
+/* left side of hero section */
+.first-part {
+    flex: 1;
+    padding: 20px 40px;
+}
+
+.first-part .small-p {
+    font-size: 1rem;
+    color: #fff;
+    background-color: var(--green-color);
+    margin: 0;
+    display: inline-block;
+    padding: 1px 10px;
+    border-radius: 2px;
+}
+
+.first-part h2 {
+    font-size: 2.9rem;
+    font-weight: 700;
+    line-height: 3.6rem;
+    margin: 20px 0px;
+}
+
+.first-part p {
+    line-height: 1.8rem;
+    color: var(--light-black);
+    margin: 20px 0px;
+}
+
+.first-part h2 .green-text {
+    color: var(--green-color);
+}
+
+/* hero section second part */
+.second-part {
+    flex: 1;
+}
+
+/* Second Section - Icon box section */
+.icon-box-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 100px 0px 40px;
+}
+
+.icon-box {
+    background-color: var(--light-green);
+    text-align: center;
+    padding: 50px;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.icon-box:hover {
+    background-color: white;
+    box-shadow: 0px 3px 15px 0px rgba(0, 200, 0, 0.2);
+}
+
+.icon-box img {
+    max-width: 70px;
+}
+
+.icon-box h5 {
+    color: var(--purple-black);
+    margin: 10px 0px;
+    font-size: 1.2rem;
+    font-family: verdana;
+    font-weight: 600;
+}
+
+.icon-box p {
+    color: var(--purple-black);
+    font-family: verdana;
+    font-weight: 200;
+}
+
+/* Third Section - Online courses section start */
+.courses-wrapper {
+    padding: 0px 0px 50px 0px;
+}
+
+.courses-wrapper h2 {
+    text-align: center;
+    color: var(--purple-black);
+    font-size: 2rem;
+    margin: 40px 0px;
+}
+
+.courses-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.course-card {
+    max-width: 320px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    flex: 1;
+}
+
+.course-card img {
+    max-width: 270px;
+}
+
+.course-card h4 {
+    color: var(--purple-black);
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin: 15px 0px;
+}
+
+.course-card .btn {
+    margin: 15px 0px;
+}
+
+.course-card .mini-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-card .mini-section img {
+    max-width: 15px;
+    display: inline-block;
+    margin-right: 3px;
+}
+
+.course-card .mini-section p {
+    font-size: .7rem;
+}
+
+.course-card .mini-section .mini-one,
+.course-card .mini-section .mini-two {
+    display: flex;
+    align-items: center;
+}
+
+/* Testimonial section */
+.testimonial-section {
+    padding: 100px 0px;
+}
+
+.testimonial-section h2 {
+    text-align: center;
+    color: var(--purple-black);
+    font-size: 2rem;
+    margin: 40px 0px;
+}
+
+.testimonial-section .testimonial-part {
+    padding: 0px 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.testimonial-section .testimonial-part img {
+    max-width: 80px;
+    flex: 1;
+
+}
+
+.testimonial-section .testimonial-part p {
+    flex: 2;
+    padding: 20px;
+    line-height: 1.5rem;
+    color: var(--light-black);
+}
+
+/* Footer Section starts here */
+
+.footer-bg {
+    background-color: #282531;
+    color: white;
+    padding: 50px 0px;
+}
+
+.footer-parts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-parts~p {
+    text-align: center;
+    padding: 50px 0px 10px 0px;
+}
+
+.footer-part {
+    flex: 1;
+    padding: 20px;
+}
+
+.footer-part h4 {
+    font-size: .8rem;
+    font-weight: 300;
+}
+
+.footer-part h6 {
+    font-size: 1rem;
+}
+
+.footer-part a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    display: block;
+    margin: 10px 0px;
+}
+
+.footer-part a:hover {
+    color: var(--green-color);
+
+}
+
+
+
+/* RESPONSIVE FOR TABLET */
+@media screen and (max-width: 768px) {
+    header {
+        justify-content: center;
+    }
+
+    /* Mobile menu will hidden until mobile version */
+    #mobile-menu {
+        display: none;
+    }
+
+    /* Mobile menu cross Button will hidden until mobile version */
+
+    #cross-btn {
+        display: none;
+    }
+
+    /* Mobile Menu Body will hidden until Mobile menu button CLICKED */
+    .mobile-menu-body {
+        display: none;
+    }
+
+    nav a {
+        flex-direction: column;
+    }
+
+    .slider {
+        flex-wrap: wrap-reverse;
+    }
+
+    .slider .second-part {
+        display: flex;
+        justify-content: center;
+    }
+
+    .icon-box-section .icon-box {
+        margin: 10px;
+    }
+
+    .courses-section .course-card {
+        margin: 10px;
+    }
+
+    .testimonial-section .testimonial-part {
+        padding: 0;
+        flex-direction: row;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE FOR MOBILE */
+
+@media screen and (max-width: 495px) {
+    header {
+        justify-content: space-between;
+    }
+
+    /* Desktop and Tablet menu hidden here */
+    nav {
+        display: none;
+    }
+
+    /* Mobile menu will hidden until mobile version */
+    #mobile-menu {
+        display: inline-block;
+        padding: 8px 5px 5px 5px;
+        border-radius: 5px;
+        background-color: var(--green-color);
+        color: white;
+        transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    #mobile-menu:hover {
+        background-color: black;
+        color: var(--green-color);
+    }
+
+    /* Mobile menu cross Button will hidden until mobile version */
+
+    #cross-btn {
+        display: none;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        background: red;
+        color: whtie;
+    }
+
+    /* Mobile Menu Body will hidden until Mobile menu button CLICKED */
+    .mobile-menu-body {
+        /* display: block; */
+        background-color: rgba(17, 145, 17, 0.459);
+        width: 100vw;
+        height: 50vh;
+        transition: 0.3s ease-in-out;
+    }
+
+    .mobile-menu-body a {
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        margin: 40px 80px;
+        padding: 10px 10px;
+        color: white;
+        /* background: black; */
+        border-radius: 10px;
+        transition: 0.4s ease-in-out;
+    }
+
+    .mobile-menu-body a:hover {
+        color: var(--green-color);
+        background: white;
+    }
+
+    .header-image {
+        max-width: 250px;
+    }
+
+    /* Hero section text align center */
+    .slider {
+        text-align: center;
+    }
+
+    .slider .first-part {
+        padding: 5px 8px;
+    }
+
+    .slider .second-part {
+        display: flex;
+        justify-content: center;
+    }
+}
